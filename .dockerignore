@@ -1,0 +1,8 @@
+.git
+.gitignore
+*.md
+Dockerfile
+.dockerignore
+gist-service
+coverage.out
+coverage.html
