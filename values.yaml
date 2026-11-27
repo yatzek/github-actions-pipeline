@@ -1,0 +1,18 @@
+githubConfigUrl: "https://github.com/yatzek/github-actions-pipeline"
+githubConfigSecret: pre-defined-secret
+
+# Optional: defaults to the Helm release name
+runnerScaleSetName: "arc-autoscaled-runners"
+
+# Keep 0 idle runners (scale-to-zero) and cap at 10 concurrent pods
+minRunners: 1
+maxRunners: 10
+
+resourceMeta:
+  noPermissionServiceAccount: {}
+
+keyVault:
+  type: ""
+
+containerMode:
+  type: "dind"
